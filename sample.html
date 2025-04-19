@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get a Free Sample - Super Landscape</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    header {
+      background-color: #5D3FD3;
+      color: white;
+      padding: 2rem 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-bottom: 3px solid #4a2c8c;
+      animation: slideIn 0.8s ease-out;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    .logo img {
+      height: 45px;
+      margin-right: 1rem;
+      border-radius: 300px;
+    }
+
+    .logo h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffdd00;
+      transform: scale(1.1);
+    }
+
+    .form-section {
+      max-width: 600px;
+      margin: 3rem auto;
+      background: #fff;
+      padding: 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-out forwards;
+      opacity: 0;
+    }
+    
+    .form-section h2 {
+      color: #5D3FD3;
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-family: 'Playfair Display', serif;
+      animation: fadeSlideDown 2s ease-out forwards;
+      opacity: 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin: 1rem 0 0.5rem;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      transition: border 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #5D3FD3;
+      outline: none;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      font-size: 1rem;
+      background-color: #5D3FD3;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #4a2db3;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #eee;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeSlideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+        <img src="logo.avif" alt="Logo">
+        <h1>Get Our Sample</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="info.html">Information</a>
+      <a href="products.html">Products</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="sample.html">Get a Sample</a>
+    </nav>
+  </header>
+
+  <section class="form-section">
+    <h2>Request a Taste of Nostalgia</h2>
+    <form action="#" method="post">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+
+      <label for="address">Shipping Address</label>
+      <textarea id="address" name="address" rows="4" placeholder="123 Purple Street, Flavor City, FL 54321" required></textarea>
+
+      <button type="submit">Send Me a Sample</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Super Landscape. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>

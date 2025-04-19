@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Landscape - Information</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    header {
+      background-color: #5D3FD3;
+      color: white;
+      padding: 2rem 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-bottom: 3px solid #4a2c8c;
+      animation: slideIn 0.8s ease-out;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    .logo img {
+      height: 45px;
+      margin-right: 1rem;
+      border-radius: 300px;
+    }
+
+    .logo h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffdd00;
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .intro-text {
+      font-size: 1.4rem;
+      color: #555;
+      margin-bottom: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    .info-boxes {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 4rem;
+      gap: 2rem;
+      animation: fadeInUp 1.2s ease-out;
+    }
+
+    .info-box {
+      max-width: 350px;
+      text-align: center;
+      margin: 1rem;
+      padding: 2.5rem;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .info-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .info-box h3 {
+      color: #5D3FD3;
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .info-box p {
+      font-size: 1.1rem;
+      color: #666;
+      line-height: 1.7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #eee;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeSlideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.avif" alt="Super Landscape Logo">
+      <h1>Information</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="info.html">Information</a>
+      <a href="products.html">Products</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="sample.html">Get a Sample</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2 style="font-size: 2.5rem; color: #5D3FD3; font-weight: bold; margin-bottom: 1.5rem;">Our Story</h2>
+    <p class="intro-text">At Super Landscape, we are committed to delivering premium vegan soft drinks that combine elegance, nostalgia, and sustainability. Every bottle is meticulously crafted to bring joy to couples who seek not only taste but also meaningful moments. Our drinks are a tribute to the past, elevated for modern-day indulgence.</p>
+
+    <div class="info-boxes">
+      <div class="info-box">
+        <h3>Our Vision</h3>
+        <p>Our goal is to bring together nostalgia and modernity through our range of vegan soft drinks, creating a premium experience that is both memorable and sustainable.</p>
+      </div>
+
+      <div class="info-box">
+        <h3>Our Values</h3>
+        <p>Elegance, nostalgia, and conscious living are at the core of everything we do. We craft our drinks using the finest ingredients, making every sip a blend of luxury and responsibility.</p>
+      </div>
+
+      <div class="info-box">
+        <h3>Our Promise</h3>
+        <p>We promise to deliver drinks that are 100% vegan, responsibly sourced, and designed to create moments of joy for couples who value quality and sustainability.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Super Landscape. All rights reserved. <br> Visit our <a href="privacy.html">Privacy Policy</a>.</p>
+  </footer>
+</body>
+
+</html>
+
+
+
